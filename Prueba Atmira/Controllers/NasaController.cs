@@ -26,7 +26,6 @@ namespace Prueba_Atmira.Controllers
             var endDate = startDate.AddDays(dayNumber);
             var apiKey = _config["Api_Key"];
 
-
             try
             {
                 var url = "https://api.nasa.gov/neo/rest/v1/feed?start_date=" + startDate.ToString("yyyy-MM-dd") + "&end_date=" + endDate.ToString("yyyy-MM-dd") + "&api_key=" + apiKey;
@@ -78,6 +77,5 @@ namespace Prueba_Atmira.Controllers
             }
             return asteroidsList;
         }
-
     }
 }
